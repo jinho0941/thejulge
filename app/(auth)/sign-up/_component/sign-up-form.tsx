@@ -129,10 +129,12 @@ export const SignUpForm = () => {
           <SelectUserTypeButton
             isSelected={userType === 'employee'}
             onClick={selectEmployee}
+            text='알바님'
           />
           <SelectUserTypeButton
             isSelected={userType === 'employer'}
             onClick={selectEmployer}
+            text='사장님'
           />
         </div>
         <Button

@@ -54,7 +54,7 @@ export const SignInForm = () => {
       }
 
       toast.success(message)
-      // router.push('/')
+      router.push('/')
     })
   }
 

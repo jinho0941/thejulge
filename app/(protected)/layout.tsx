@@ -1,6 +1,6 @@
 import { Navbar } from '@/components/navbar/navbar'
 
-const MainLayout = ({ children }: { children: React.ReactNode }) => {
+const ProtectedLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <Navbar />
@@ -9,4 +9,4 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
   )
 }
 
-export default MainLayout
+export default ProtectedLayout

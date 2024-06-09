@@ -5,13 +5,15 @@ import { Circle, CircleCheck } from 'lucide-react'
 type Props = {
   isSelected: boolean
   onClick: () => void
+  text: string
 }
 
-export const SelectUserTypeButton = ({ isSelected, onClick }: Props) => {
+export const SelectUserTypeButton = ({ isSelected, onClick, text }: Props) => {
   return (
     <Button
       onClick={onClick}
       variant={'outline'}
+      type='button'
       size={'xl'}
       className={cn(
         'rounded-full text-gray-500',
@@ -19,7 +21,7 @@ export const SelectUserTypeButton = ({ isSelected, onClick }: Props) => {
       )}
     >
       {isSelected ? <CircleCheck className='text-orange-500' /> : <Circle />}
-      <span className='ml-2'>알바님</span>
+      <span className='ml-2'>{text}</span>
     </Button>
   )
 }

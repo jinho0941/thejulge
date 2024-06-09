@@ -3,6 +3,7 @@
 import { api } from '@/lib/utils'
 import { ActionType } from './type'
 import { cookies } from 'next/headers'
+import { revalidatePath } from 'next/cache'
 
 const setCurrentUserId = async (id: string) => {
   cookies().set('userId', id)
